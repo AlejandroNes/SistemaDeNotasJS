@@ -1,0 +1,28 @@
+{
+  "estudiantes": [
+    {
+      "nombre": "Alejandro",
+      "examen1": 78,
+      "examen2": 98,
+      "examen3": 80,
+      "promedio": "84.80",
+      "id": 1
+    },
+    {
+      "nombre": "Fernanda",
+      "examen1": 61,
+      "examen2": 67,
+      "examen3": 60,
+      "promedio": "62.40",
+      "id": 3
+    },
+    {
+      "nombre": "Angela",
+      "examen1": 78,
+      "examen2": 82,
+      "examen3": 81,
+      "promedio": "80.40",
+      "id": 4
+    }
+  ]
+}

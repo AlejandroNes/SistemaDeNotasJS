@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Sistema de Notas</title>
+</head>
+
+<body class="bg-dark">
+
+    <div class="container-fluid  bg-dark">
+        <h1 class="text-center text-info py-2">Sistema de Notas para estudiantes</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="navegacion col-3 mr-3 bg-primary">
+                <div class="text-center mt-3">
+                    <img src="./img/estudiante.jpg" class="img-fluid rounded-circle" alt="..." width="150px">
+                </div>
+                <div class="list-group mt-5">
+                    <a href="index.html"
+                        class="list-group-item bg-primary py-5 mb-3 text-center text-white text-decoration-none">Notas
+                        de
+                        Estudiantes</a>
+                    <a href="nuevoEstudiante.html"
+                        class="list-group-item bg-primary py-5 mb-3 text-center text-white text-decoration-none">Agregar
+                        Estudiante</a>
+                </div>
+            </div>
+
+            <!-- tabla de estudiantes -->
+            <div class="col-8 border bg-white">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="resultado col-10 offset-1">
+                            <!-- formulario -->
+                            <form id="formulario" class="p-4 rounded shadow-lg bg-warning mt-5">
+                                <h3 class="text-center text-white">Formulario de Edición</h3>
+                                
+                                    <label for="nombre" class="text-white">Ingrese Nombre</label>
+                                    <input type="text" class="form-control w-100" id="nombre" name="nombre" placeholder="nombre del estudiante">
+
+                                    <div class="container-fluid mt-3">
+                                        <div class="row">
+                                            <div class="col-12">
+                    
+                                                <label for="examen1" class="text-white">Examen 1</label>
+                                                <input type="text" class="form-control d-inline-block w-25 my-2 mx-1" id="examen1" name="examen1" placeholder="30%">
+
+                                                <label for="examen2" class="text-white">Examen 2</label>
+                                                <input type="text" class="form-control d-inline-block w-25 my-2 mx-1" id="examen2" name="examen2" placeholder="30%">
+                                                <br>
+                                                <label for="examen3" class="text-white">Examen 3</label>
+                                                <input type="text" class="form-control d-inline-block w-25 my-2 mx-1" id="examen3" name="examen3" placeholder="40%">
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <input type="hidden" name="id" id="id" value="">
+                                    <div class="text-center">
+                                        <input type="submit" value="Editar" id="boton" class="btn btn-dark w-75 my-3 mx-auto ">
+                                    </div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+<script src="js/editarEstudiante.js" type="module"></script>
+</body>
+
+</html>
